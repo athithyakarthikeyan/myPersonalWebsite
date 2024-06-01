@@ -1,19 +1,19 @@
 export default function downloadFile() {
-    var url = './src/assets/Athithya Resume.pdf';
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'blob';
+  const url = './src/assets/Athithya Resume.pdf';
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', url, true);
+  xhr.responseType = 'blob';
 
-    xhr.onload = function() {
-      var urlCreator = window.URL || window.webkitURL;
-      var imageUrl = urlCreator.createObjectURL(this.response);
-      var tag = document.createElement('a');
-      tag.href = imageUrl;
-      tag.download = 'Athithya Resume.pdf'; // Specify the file name here
+  xhr.onload = function() {
+      const urlCreator = window.URL || window.webkitURL;
+      const fileUrl = urlCreator.createObjectURL(this.response);
+      const tag = document.createElement('a');
+      tag.href = fileUrl;
+      tag.download = 'Athithya Resume.pdf';
       document.body.appendChild(tag);
       tag.click();
       document.body.removeChild(tag);
-    };
+  };
 
-    xhr.send();
-  }
+  xhr.send();
+}
