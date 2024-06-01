@@ -1,0 +1,230 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.header{
+  background-color:#142d4c;
+  color: white;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.main-title{
+  margin-top:0;
+  margin-left: 15px;
+  padding:0;
+  font-size: 40px;
+}
+
+body{
+  margin: 0;
+}
+
+.main-body{
+  background-color: #385170;
+  margin: 0;
+  color: white;
+}
+
+.central-text {
+  margin: 0;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+
+}
+
+h1{
+  margin:0;
+} 
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+}
+.settings {
+  margin-right: 15px;
+} 
+
+.target{
+  font-size: 75px;
+  padding-top: 100px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.intro-text{
+  color: white;
+  margin-right: 20px;
+  padding-top: 200px;
+  text-align:justify;
+  font-size: 30px;
+}
+
+.project-title{
+  font-size: 75px;
+  padding-top: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.card{
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  background-color: white;
+  width: 250px;
+}
+
+.card-text{
+  text-align: left;
+  margin-left: 10px;
+}
+.card h2, .card p {
+  color: #142d4c;
+}
+.card:hover{
+  transform: translateY(-10px);
+  transition: transform ease-in 200ms;
+}
+
+.project-cards{
+  display :flex;
+  justify-content: space-around;
+}
+
+.image{
+  width: 200px;
+}
+
+.project-cards{
+  text-align: center;
+}
+
+.profile-button{
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.project-description{
+  padding-right: 10px;
+}
+
+.nav-button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding-left: 30px;
+  font-size: 30px;
+}
+.nav-button:hover{
+  transform: scale(1.1);
+  transition: transform ease-in 200ms;
+}
+
+.about-content{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.certificates{
+  display:flex;
+  justify-content: space-around;
+}
+
+.certificate-title{
+  text-align: center;
+  font-size: 100px;
+}
+
+.pfp{
+  padding-right: 300px;
+  margin-left: 40px;
+}
+
+.program-language{
+  font-size: 10px;
+  margin: 0;
+}
+
+.contact-title{
+  text-align: center;
+  font-size: 100px;
+}
+.contact-content{
+  display: flex;
+  justify-content: space-around;
+}
+.get-touch{
+  text-align:center;
+  margin:0;
+  font-size: 50px
+}
+
+.footer-section{
+  color: black;
+  margin-bottom: 60px;
+}
+
+.download-button{
+  background-color:#142d4c;
+  border:none;
+  text-align: center;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  width: 100px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+} 
+.download-button:hover{
+  background-color:transparent;
+  border:none;
+  text-align: center;
+  height: 40px;
+  border-radius: 20px;
+  color: #142d4c;
+  width: 100px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  border: 2px solid #142d4c;
+  transition: all ease-in 200ms;
+} 
+.resume{
+  text-align: center;
+}
+
+.form{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  textarea{
+    background-color:none;
+  }
+}
+.form-group{
+  padding-bottom: 40px;
+}
+
+.socials{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-image{
+  width: 40px;
+}
+
+.social-image:hover{
+  transform: scale(1.1);
+  transition: transform ease-in 200ms;
+}
+
+.mail-section{
+  text-align: center;
+}
