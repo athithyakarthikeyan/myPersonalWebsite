@@ -62,7 +62,7 @@ function Body() {
                         <label for="message">Message: </label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button className="download-button" type="submit">Send</button>
+                    <button className="send-button" type="submit">Send</button>
               </form>
               </div>
         </div>

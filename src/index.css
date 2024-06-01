@@ -170,8 +170,9 @@ a{
 }
 
 .footer-section{
-  color: black;
-  margin-bottom: 60px;
+  background-color: black;
+  padding-bottom: 50px;
+  border:0;
 }
 
 .download-button{
@@ -180,10 +181,11 @@ a{
   text-align: center;
   height: 40px;
   border-radius: 20px;
+  margin-top: 20px;
   color: white;
   width: 100px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
+  
 } 
 .download-button:hover{
   background-color:transparent;
@@ -228,3 +230,40 @@ a{
 .mail-section{
   text-align: center;
 }
+
+p{
+  border: 0;
+  margin: 0;
+}
+
+.footer-text{
+  color: white;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 30px;
+}
+
+.send-button{
+    background-color:#142d4c;
+    border:none;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+.send-button:hover{
+  background-color:transparent;
+  border:none;
+  text-align: center;
+  height: 40px;
+  border-radius: 20px;
+  color: #142d4c;
+  width: 100px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  border: 2px solid #142d4c;
+  transition: all ease-in 200ms;
+} 
