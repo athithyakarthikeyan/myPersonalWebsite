@@ -10,6 +10,8 @@ import './index.css';
 import downloadFile from './DownloadFile.js';
 import Linkedin from "./assets/png-clipart-linkedin-linkedin-thumbnail-removebg-preview.png";
 import Github from "./assets/GitHub-Mark-ea2971cee799-removebg-preview.png";
+import Weather from "./assets/images.png";
+import Skills from './Skills.jsx';
 
 function Body() {
   return (
@@ -26,13 +28,16 @@ function Body() {
       <div className="project-cards">
         <Card image={Image} style={{ width: '100px', marginTop: '50px', marginBottom: '50px' }} lang="PYTHON" name="Wordle" description="Wordle Game consisting of 300 words and simple GUI" link="https://github.com/athithyakarthikeyan/passwordGenerator" />
         <Card image={Password} style={{ width: '200px' }} lang="PYTHON" name="Password Generator" description="Password Generator with variable length and saving options" link="https://github.com/athithyakarthikeyan/passwordGenerator" />
+        <Card image={Weather} style={{ width: '200px' }} lang="JAVASCRIPT" name="Weather App" description="Weather app that uses React.js and OpenWeatherAPP api" link="https://github.com/athithyakarthikeyan/weatherApp" />
         <Card image={Bank} style={{ width: '200px' }} lang="C++" name="Bank Account" description="Bank account simulator using OOPs consisting of useful functions" link="https://github.com/athithyakarthikeyan/bankSystem" />
       </div>
       <div className="certificate-section">
-        <h1 className="certificate-title">Certifications</h1>
+        <h1 className="certificate-title">Skills</h1>
         <div className="certificates">
-           <img src={Amazon} style={{ width: '500px' }} alt="Amazon Certificate" />
-           <img src={Harvard} style={{ width: '700px' }} alt="Harvard Certificate" />
+          <Skills skillPercent={"10"}/>
+          <Skills skillPercent={"20"}/>
+          <Skills skillPercent={"40"}/>
+          <Skills skillPercent={"100"}/>
         </div>
       </div>
       <div id="contact" className="contact-section">

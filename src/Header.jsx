@@ -9,7 +9,7 @@ export default function Header({ aboutRef, projectRef, contactRef }) {
       <nav className="nav-bar">
         <h1 className="main-title">Athithya Karthikeyan</h1>
         <div className="profile-button">
-          <h1>Web Designer</h1>
+          <h1>Front-end Developer</h1>
         </div>
       </nav>
     </div>
