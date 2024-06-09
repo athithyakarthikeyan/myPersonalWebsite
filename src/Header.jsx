@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import "./index.css";
 
 export default function Header({ aboutRef, projectRef, contactRef }) {
-  
-
   return (
     <div className="header">
       <nav className="nav-bar">

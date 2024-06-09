@@ -3,8 +3,10 @@ import Card from './Card.jsx';
 import Image from './assets/Wordle_Logo.svg.png';
 import Password from './assets/password-icon-protection-illustration-sign-security-symbol-or-logo-vector-removebg-preview.png';
 import Bank from './assets/bank-icon-logo-design-vector-removebg-preview.png';
-import Harvard from "./assets/Screenshot 2024-05-30 141908.png";
-import Amazon from "./assets/Screenshot 2024-05-30 141741.png";
+import HTML from "./assets/png-clipart-html-logo-html5-logo-icons-logos-emojis-tech-companies-thumbnail-removebg-preview.png";
+import Reactjs from "./assets/png-transparent-react-javascript-angularjs-ionic-github-text-logo-symmetry-thumbnail-removebg-preview.png";
+import Javascript from "./assets/png-clipart-javascript-scalable-graphics-logo-encapsulated-postscript-javascript-icon-text-logo-thumbnail-removebg-preview.png";
+import CSS from "./assets/png-transparent-website-web-internet-css-style-css3-technology-social-media-logos-i-flat-colorful-icon-thumbnail-removebg-preview.png";
 import Pfp from "./assets/Arthur_Morgan_-_Red_Dead_Redemption_2.png";
 import './index.css';
 import downloadFile from './DownloadFile.js';
@@ -34,10 +36,10 @@ function Body() {
       <div className="certificate-section">
         <h1 className="certificate-title">Skills</h1>
         <div className="certificates">
-          <Skills skillPercent={"10"}/>
-          <Skills skillPercent={"20"}/>
-          <Skills skillPercent={"40"}/>
-          <Skills skillPercent={"100"}/>
+          <Skills skillName={"HTML"}skillLogo ={HTML} style={{width:"150px"}} skillPercent={"90"}/>
+          <Skills skillName={"CSS"}skillLogo ={CSS} style={{width:"130px"}}skillPercent={"80"}/>
+          <Skills skillName={"JavaScript"}skillLogo ={Javascript} style={{width:"130px"}}skillPercent={"60"}/>
+          <Skills skillName={"React.js"}skillLogo ={Reactjs} style={{width:"130px"}}skillPercent={"80"}/>
         </div>
       </div>
       <div id="contact" className="contact-section">
