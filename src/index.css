@@ -64,8 +64,8 @@ h1{
 }
 
 .project-title{
-  font-size: 75px;
-  padding-top: 30px;
+  font-size: 100px;
+  margin-top: 200px;
   padding-bottom: 50px;
   text-align: center;
   white-space: nowrap;
@@ -144,7 +144,7 @@ a{
 .certificate-title{
   text-align: center;
   font-size: 100px;
-  padding-top: 100px;
+  margin-top: 150px;
 }
 
 .pfp{
@@ -160,7 +160,7 @@ a{
 .contact-title{
   text-align: center;
   font-size: 50px;
-  padding-top: 200px;
+  margin-top: 250px;
   padding-bottom:70px;
 }
 .contact-content{

@@ -20,9 +20,13 @@ function Body() {
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
   const projectRef = useRef(null);
+  const projectTitleRef = useRef(null);
+  const downloadRef = useRef(null);
   const skillsInView = useInView(skillsRef, { once: true });
   const contactInView = useInView(contactRef, { once: true });
   const projectInView = useInView(projectRef, { once: true });
+  const projectTitleInView = useInView(projectTitleRef, {once : true});
+  const downloadInView = useInView(downloadRef,{once : true});
   return (
     <div className="main-body">
       <div className="about-me">
@@ -32,13 +36,21 @@ function Body() {
         </div>
       </div>
       <div id="project" className="project-section">
-        <h1 className="project-title">Projects</h1>
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          ref={projectTitleRef}
+          animate={projectTitleInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="project-title">Projects</h1>
+        </motion.div>
+        
       </div>
         <motion.div
           className="project-cards"
           initial={{ opacity: 0, y: 50 }}
           ref={projectRef}
-          animate={projectInView ? { opacity: 1, x: 0 } : {}}
+          animate={projectInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
         >
         <Card image={Image} style={{ width: '100px', marginTop: '50px', marginBottom: '50px' }} lang="PYTHON" name="Wordle" description="Wordle Game consisting of 300 words and simple GUI" link="https://github.com/athithyakarthikeyan/passwordGenerator" />
@@ -76,13 +88,20 @@ function Body() {
         <div className="contact-content">
           <div className="resume">
             <h1>Resume</h1>
-            <p>A copy of my resume with all my qualifications and details</p>
-            <button onClick={downloadFile} className="download-button">Download</button>
+            <p>A copy of my resume with all my qualifications and details.</p>
+            <motion.div
+              initial={{ opacity: 0}}
+              ref={downloadRef}
+              animate={downloadInView ? { opacity: 1} : {}}
+              transition={{ duration: 1 }}
+            >
+             <button className="download-button" onClick={downloadFile} >Download</button>
+            </motion.div>
             <div className="social-section">
               <h1>Socials</h1>
               <div className="socials">
-              <a href="https://www.linkedin.com/in/athithya-karthikeyan-558226258/"><img className="social-image" src={Linkedin} alt="LinkedIn" /></a>
-              <a href='https://github.com/athithyakarthikeyan'><img className="social-image" src={Github} alt="GitHub" /></a>
+                <a href="https://www.linkedin.com/in/athithya-karthikeyan-558226258/"><img className="social-image" src={Linkedin} alt="LinkedIn" /></a>
+                <a href='https://github.com/athithyakarthikeyan'><img className="social-image" src={Github} alt="GitHub" /></a>
               </div>
             </div>
           </div>
