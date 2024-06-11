@@ -19,10 +19,10 @@ import { motion, useInView } from 'framer-motion';
 function Body() {
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
-
+  const projectRef = useRef(null);
   const skillsInView = useInView(skillsRef, { once: true });
   const contactInView = useInView(contactRef, { once: true });
-
+  const projectInView = useInView(projectRef, { once: true });
   return (
     <div className="main-body">
       <div className="about-me">
@@ -34,12 +34,18 @@ function Body() {
       <div id="project" className="project-section">
         <h1 className="project-title">Projects</h1>
       </div>
-      <div className="project-cards">
+        <motion.div
+          className="project-cards"
+          initial={{ opacity: 0, y: 50 }}
+          ref={projectRef}
+          animate={projectInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1 }}
+        >
         <Card image={Image} style={{ width: '100px', marginTop: '50px', marginBottom: '50px' }} lang="PYTHON" name="Wordle" description="Wordle Game consisting of 300 words and simple GUI" link="https://github.com/athithyakarthikeyan/passwordGenerator" />
         <Card image={Password} style={{ width: '200px' }} lang="PYTHON" name="Password Generator" description="Password Generator with variable length and saving options" link="https://github.com/athithyakarthikeyan/passwordGenerator" />
         <Card image={Weather} style={{ width: '200px' }} lang="JAVASCRIPT" name="Weather App" description="Weather app that uses React.js and OpenWeatherAPI" link="https://github.com/athithyakarthikeyan/weatherApp" />
         <Card image={Bank} style={{ width: '200px' }} lang="C++" name="Bank Account" description="Bank account simulator using OOPs consisting of useful functions" link="https://github.com/athithyakarthikeyan/bankSystem" />
-      </div>
+        </motion.div>
       <div className="certificate-section">
         <motion.div
           className="profile-button"
@@ -72,10 +78,12 @@ function Body() {
             <h1>Resume</h1>
             <p>A copy of my resume with all my qualifications and details</p>
             <button onClick={downloadFile} className="download-button">Download</button>
-            <h1>Socials</h1>
-            <div className="socials">
+            <div className="social-section">
+              <h1>Socials</h1>
+              <div className="socials">
               <a href="https://www.linkedin.com/in/athithya-karthikeyan-558226258/"><img className="social-image" src={Linkedin} alt="LinkedIn" /></a>
               <a href='https://github.com/athithyakarthikeyan'><img className="social-image" src={Github} alt="GitHub" /></a>
+              </div>
             </div>
           </div>
           <div className="mail-section">
